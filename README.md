@@ -1,12 +1,12 @@
-\# PulseAI – Smart ECG Monitoring and Arrhythmia Detection System
+PulseAI – Smart ECG Monitoring and Arrhythmia Detection System
 
 
 
-!\[PulseAI](image/enclosure.jpg)
+[PulseAI](image/enclosure.jpg)
 
 
 
-\## 📌 Project Overview
+📌 Project Overview
 
 
 
@@ -26,7 +26,7 @@ The project is also designed as a foundation for future arrhythmia detection and
 
 
 
-\## 🎯 Objectives
+ 🎯 Objectives
 
 
 
@@ -53,8 +53,7 @@ The project is also designed as a foundation for future arrhythmia detection and
 \---
 
 
-
-\## ✨ Key Features
+✨ Key Features
 
 
 
@@ -87,8 +86,7 @@ The project is also designed as a foundation for future arrhythmia detection and
 \---
 
 
-
-\## 🧩 System Architecture
+🧩 System Architecture
 
 
 
