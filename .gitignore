@@ -1,0 +1,17 @@
+# Arduino / ESP32
+.arduino/
+*.elf
+*.bin
+*.hex
+
+# Build files
+build/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
