@@ -32,35 +32,21 @@ The system architecture can be extended for advanced ECG analysis and arrhythmia
 
 ---
 
-🏗️ System Architecture
+with a **Mermaid diagram**, which GitHub renders much more professionally:
 
-ECG Electrodes
-      │
-      ▼
-┌─────────────┐
-│   AD8232    │
-│ ECG Sensor  │
-└──────┬──────┘
-       │ Analog ECG
-       ▼
-┌─────────────┐
-│   ADS1115   │
-│   16-bit    │
-│     ADC     │
-└──────┬──────┘
-       │ I²C
-       ▼
-┌─────────────┐
-│    ESP32    │
-│             │
-│ Filtering   │
-│ BPM         │
-│ Lead-Off    │
-│ Web Server  │
-└──────┬──────┘
-       │ Wi-Fi
-       ▼
-┌─────────────┐
-│ Web Browser │
-│ Dashboard   │
-└─────────────┘
+```markdown
+## 🏗️ System Architecture
+
+```mermaid
+flowchart LR
+    A[ECG Electrodes] --> B[AD8232 ECG Sensor]
+    B -->|Analog ECG Signal| C[ADS1115 16-bit ADC]
+    C -->|I2C| D[ESP32]
+    
+    D --> E[Signal Processing]
+    D --> F[BPM Detection]
+    D --> G[Lead-Off Detection]
+    D --> H[Web Server]
+    
+    H --> I[Wi-Fi]
+    I --> J[Web Dashboard]
