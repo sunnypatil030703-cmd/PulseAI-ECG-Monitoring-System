@@ -32,9 +32,6 @@ The system architecture can be extended for advanced ECG analysis and arrhythmia
 
 ---
 
-with a **Mermaid diagram**, which GitHub renders much more professionally:
-
-```markdown
 ## 🏗️ System Architecture
 
 ```mermaid
@@ -42,11 +39,14 @@ flowchart LR
     A[ECG Electrodes] --> B[AD8232 ECG Sensor]
     B -->|Analog ECG Signal| C[ADS1115 16-bit ADC]
     C -->|I2C| D[ESP32]
-    
+
     D --> E[Signal Processing]
     D --> F[BPM Detection]
     D --> G[Lead-Off Detection]
     D --> H[Web Server]
-    
-    H --> I[Wi-Fi]
+
+    H --> I[Wi-Fi Access Point]
     I --> J[Web Dashboard]
+```
+
+---
